@@ -11,9 +11,9 @@ REPOSITORY=/home/ubuntu/app
 PROJECT_NAME=springboot-intro
 
 echo "> Build 파일 복사"
-echo "> cp "$REPOSITORY/deploy"/*.jar $REPOSITORY/"
+echo "> cp $REPOSITORY/deploy/*.jar $REPOSITORY/"
 
-cp "$REPOSITORY/deloy"/*.jar $REPOSITORY/
+cp "$REPOSITORY/deloy/"*.jar $REPOSITORY/
 
 echo "> 새 어플리케이션 배포"
 JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
