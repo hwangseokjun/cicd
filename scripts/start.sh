@@ -14,11 +14,10 @@ echo "> Build 파일 복사"
 echo "> cp $REPOSITORY/deploy/demo-0.0.1-SNAPSHOT-plain.jar $REPOSITORY/"
 echo "> cp $REPOSITORY/deploy/demo-0.0.1-SNAPSHOT.jar $REPOSITORY/"
 
-cp $REPOSITORY/deloy/demo-0.0.1-SNAPSHOT-plain.jar $REPOSITORY/
-cp $REPOSITORY/deloy/demo-0.0.1-SNAPSHOT.jar $REPOSITORY/
+cp $REPOSITORY/deloy/*.jar $REPOSITORY/
 
 echo "> 새 어플리케이션 배포"
-JAR_NAME=$(ls -tr $REPOSITORY/demo-0.0.1-SNAPSHOT.jar | tail -n 1)
+JAR_NAME=$(ls -tr $REPOSITORY/*.jar | tail -n 1)
 
 echo "> JAR Name: $JAR_NAME"
 
