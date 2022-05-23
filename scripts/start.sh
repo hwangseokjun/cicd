@@ -7,7 +7,7 @@ ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
 
-REPOSITORY=/home/ubuntu/app
+REPOSITORY=/home/ubuntu/moolmool
 PROJECT_NAME=springboot-intro
 
 echo "> Build 파일 복사"
