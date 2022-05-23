@@ -1,7 +1,8 @@
 package com.example.demo;
 
 import lombok.Getter;
+import lombok.Setter;
 
-@Getter
+@Getter @Setter
 public class TestClass {
 }
